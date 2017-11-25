@@ -1,0 +1,152 @@
+*{
+  margin: 0px; padding: 0px;
+}
+html, body{
+  height: 100px;
+}
+.avatar{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 20%;
+}
+.smtitle{
+  color: red;
+  font-size: 20px;
+  margin-top: 70%;
+  padding-left: 30%;
+  text-align: left;
+  margin-right: 28px;
+}
+#iframe {
+  margin: 0px 300px;
+  width: 50%;
+  height: 734px;
+  border: none;
+  overflow: hidden;
+}
+#leftnav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 400px;
+  z-index: 1000;
+  background: rgba(0,0,0,.8);
+  text-align: center;
+}
+#leftnav h1 {
+  color: red;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+#leftnav h2 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+#leftnav ul li a {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  text-align: left;
+  margin-left: 60px;
+  display: block;
+  font-size: 18px;
+  padding: 8px;
+}
+#rightnav{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 400px;
+  background: rgba(0,0,0,.8);
+  text-align: center;
+}
+/*Social Media Content*/
+.socialmedia{
+  	margin: 20px auto;
+  }
+.socialmedia ul li {
+  	display: flex;
+  	list-style: none;
+    margin-left: 13%;
+    text-align: right;
+  }
+  .socialmedia ul li pre{
+      padding-top: 14px;
+      font-size: 18px;
+      color: rgba(255,255,255,.8);
+      }
+.socialmedia ul li a {
+  	width: 40px;
+  	height: 40px;
+  	line-height: 50px;
+  	font-size: 26px;
+  	color: red;
+  }
+  /*My Skills Code*/
+.main-title {
+    line-height: 1;
+    margin-top: 80px;
+    margin-left: 400px;
+    color: #555;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+.main-title h1{
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+.main-title h2{
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .my_info {
+      line-height: 1;
+      margin-top: 90px;
+      margin-left: 500px;
+      margin-right: 500px;
+      color: #555;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+  .my_info h1{
+    font-weight: 300;
+    margin-bottom: 5%;
+  }
+  .my_info h2{
+      font-weight: 100;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+  /*Portfolio*/
+  .trikromatikz{
+    border-top: solid;
+    border-bottom: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    top: 5%;
+  }
+  .trikromatikz img{
+    margin: 10px 13%;
+    width: 400px;
+    height: 400px;
+    float: right;
+  }
+  .my_skills ul{
+    border-bottom: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    top: 5%;
+  }
+  .my_skills ul li{
+    margin-left: 5%;
+    padding: 2px;
+    float:left;
+  }

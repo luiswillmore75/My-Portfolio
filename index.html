@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Luis Willmore</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+<!--navigation bar-->
+    <div class="my_info" style="margin-top:250px;">
+      <h1 style="font-size:50px;">Hi, <br> I'm Luis, <br>
+        front-end web developer.
+      </h1>
+      <h2 style="margin-left:600px;margin-top:300px;">HTML5 | CSS3 | JavaScript</h2><br>
+
+    </div>
+
+    <nav id="leftnav">
+      <a href="index.html">
+        <img class="avatar" src="img\avatar1.jpg" alt="Luis Willmore Avatar">
+      </a>
+        <h1>Luis Willmore</h1>
+        <h2>Front-End Web Developer</h2>
+
+          <ul id='lftnav'>
+            <li><a class="hd" href="my_skills.html" target="iframe">MY SKILLS</a></li>
+            <li><a class="hd" href="portfolio.html" target="iframe">PORTFOLIO</a></li>
+            <li><a class="hd" href="aboutme.html" target="iframe">ABOUT ME</a></li>
+          </ul>
+    </nav>
+
+    <nav id="rightnav">
+      <div class="smtitle">
+        <p>GET IN TOUCH</p>
+      </div>
+
+      <div class="socialmedia">
+        <ul>
+        <li><a href="mailto:luiswillmore@gmail.com?" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a> <pre>  luiswillmore@gmail.com</pre></li>
+        <li><a href="http://www.facebook.com/luis.willmore.1" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a><pre>  luis.willmore.1</pre></li>
+        <li><a href="https://github.com/luiswillmore75" base target="_blank"> <i class="fa fa-github" aria-hidden="true"></i></a> <pre>  luiswillmore75</pre></li>
+        <li><a href="https://www.linkedin.com/in/luis-a-willmore-jr/" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a><pre>  luis-a-willmore-jr</pre></li>
+        </ul>
+      </div>
+    </nav>
+<!--nav html to iframe-->
+    <iframe id="iframe" name="iframe"></iframe>
+
+    <script>
+    $(".hd").click(function() {
+      $( ".my_info" ).hide("slow");
+    });
+    </script>
+
+  </body>
+
+</html>
