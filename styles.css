@@ -1,8 +1,17 @@
-*{
-  margin: 0px; padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 html, body{
   height: 100px;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper{
+	max-width: 960px;
+	min-height: 100%;
+  margin: 0px auto;
 }
 .avatar{
   background-size: cover;
@@ -15,18 +24,35 @@ html, body{
 }
 .smtitle{
   color: red;
-  font-size: 20px;
-  margin-top: 70%;
-  padding-left: 30%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10%;
+  margin-left: 66px;
   text-align: left;
-  margin-right: 28px;
 }
-#iframe {
-  margin: 0px 300px;
-  width: 50%;
-  height: 734px;
-  border: none;
-  overflow: hidden;
+#intro{
+  font-size:50px;
+}
+#intro2{
+  margin-left:600px;
+  margin-top:300px;
+}
+.my_info {
+  line-height: 1;
+  margin-top: 250px;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: #555;
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+.my_info h1{
+  font-weight: 300;
+  margin-bottom: 5%;
+}
+.my_info h2{
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 1.4;
 }
 #leftnav{
   position: fixed;
@@ -59,94 +85,251 @@ html, body{
   font-size: 18px;
   padding: 8px;
 }
-#rightnav{
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 400px;
-  background: rgba(0,0,0,.8);
-  text-align: center;
+#iframe {
+  border: none;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
 }
 /*Social Media Content*/
 .socialmedia{
-  	margin: 20px auto;
+  	margin: 14px auto;
   }
 .socialmedia ul li {
   	display: flex;
   	list-style: none;
-    margin-left: 13%;
-    text-align: right;
+    text-align: left;
   }
-  .socialmedia ul li pre{
-      padding-top: 14px;
-      font-size: 18px;
-      color: rgba(255,255,255,.8);
-      }
-.socialmedia ul li a {
-  	width: 40px;
-  	height: 40px;
-  	line-height: 50px;
-  	font-size: 26px;
-  	color: red;
+.socialmedia ul li pre{
+    padding-top: 8px;
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
   }
   /*My Skills Code*/
 .main-title {
     line-height: 1;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 400px;
     color: #555;
     font-family: 'Roboto Condensed', sans-serif;
-  }
+}
 .main-title h1{
+  margin-left: 5%;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 5%;
+  text-transform: uppercase;
+  margin-top: 5px;
+ margin-bottom: 5px;
 }
 .main-title h2{
+    margin-left: 5%;
     font-weight: 100;
     font-size: 16px;
     line-height: 1.4;
-  }
-  .my_info {
-      line-height: 1;
-      margin-top: 90px;
-      margin-left: 500px;
-      margin-right: 500px;
-      color: #555;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
-  .my_info h1{
-    font-weight: 300;
-    margin-bottom: 5%;
-  }
-  .my_info h2{
-      font-weight: 100;
-      font-size: 22px;
-      line-height: 1.4;
-    }
+}
+
   /*Portfolio*/
-  .trikromatikz{
-    border-top: solid;
-    border-bottom: solid;
-    border-top-width: thin;
-    border-bottom-width: thin;
-    top: 5%;
+.trikromatikz{
+  border-top: solid;
+  border-bottom: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  top: 5%;
+  float: left;
+}
+.trikromatikz img{
+  margin: 10px 13%;
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+.trikromatikz p{
+  margin-left: 5%;
+}
+.my_skills p{
+  margin-left: 5%;
+  padding-bottom: 2%;
+  color:red;
+  font-size:20px;
+  font-weight:300px;
+}
+.my_skills ul{
+  border-bottom: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  padding-bottom: 3%;
+}
+.my_skills ul li{
+  margin-left: 7%;
+  float: left;
+}
+.socialmedia-media{
+  display: none;
+}
+#leftnav-media{
+  display: none;
+}
+.my_info-media{
+  display: none;
+}
+.wrapper-media{
+  display: none;
+}
+
+/*Media Content*/
+@media only screen and (max-width: 768px) {
+.avatar{
+    width: 300px;
+    height: 300px;
+    margin-left: 5px;
   }
-  .trikromatikz img{
-    margin: 10px 13%;
-    width: 400px;
-    height: 400px;
-    float: right;
+.smtitle{
+    font-size: 32px;
   }
-  .my_skills ul{
-    border-bottom: solid;
-    border-top-width: thin;
-    border-bottom-width: thin;
-    top: 5%;
+#intro{
+   font-size:80px;
+}
+#intro2{
+  margin-left:0px;
+  margin-top:200px;
+  font-size: 30px;
+  color: red;
+}
+/*Social Media Content*/
+.socialmedia{
+  display: none;
   }
-  .my_skills ul li{
+.socialmedia-media{
+  display: flex;
+}
+.socialmedia-media ul li{
+  float: left;
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: -50px;
+}
+#leftnav{
+  display: none;
+}
+#leftnav-media{
+  display: block;
+}
+#leftnav-media{
+  background: rgba(0,0,0,.8);
+}
+#leftnav-media h1{
+  color: red;
+  margin-left: 10px;
+  font-size: 34px;
+}
+#leftnav-media h2{
+  color: red;
+  font-size: 22px;
+  margin-left: 10px;
+  font-size: 24px;
+}
+#leftnav-media ul{
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+#leftnav-media ul li{
+  padding: 8px;
+}
+#leftnav-media ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    font-size: 16px;
+  }
+.my_info{
+  display: none;
+}
+.my_info-media{
+  display: block;
+}
+.my_info-media h1{
+  margin-top: 20px;
+  font-size: 26px;
+  margin-bottom: 9px;
+}
+.my_info-media h2{
+  font-size: 16px;
+  color: red;
+}
+.wrapper{
+  display: none;
+}
+.wrapper-media{
+  display: block;
+}
+.wrapper-media{
+	max-width: 768px;
+	min-height: 100%;
+  margin: 0px auto;
+}
+.main-title{
+  display: none;
+}
+.main-title-media{
+  margin-top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.main-title-media p{
+  font-weight: 500;
+  font-size: 26px;
+}
+.main-title-media h1{
+  margin-left: 5%;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  margin-top: 5px;
+ margin-bottom: 5px;
+}
+.main-title-media h2{
     margin-left: 5%;
-    padding: 2px;
-    float:left;
-  }
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.my_skills ul{
+  border-bottom: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  padding-bottom: 3%;
+}
+.my_skills ul li{
+  margin-left: 10%;
+  float: left;
+}
+  /*Portfolio*/
+.trikromatikz{
+  float: left;
+}
+.trikromatikz img{
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+.trikromatikz p{
+  margin: auto 5%;
+  font-size: 18px;
+}
+.my_skills p{
+  margin-left: 10%;
+  padding-bottom: 2%;
+  color:red;
+  font-size:20px;
+  font-weight:300px;
+}
+}
+/*
+@media only screen and (max-width:768px) and (max-height:1024px) and (orientation:portrait) {
+*/
